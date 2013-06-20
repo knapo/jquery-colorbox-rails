@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "jquery-colorbox/version"
 
@@ -9,12 +8,11 @@ Gem::Specification.new do |s|
   s.email       = ["knapo@knapo.net"]
   s.homepage    = "https://github.com/knapo/jquery-colorbox-rails"
   s.summary     = %q{jQuery Colorbox for Rails 3.1+ Asset Pipeline}
-  s.description = %q{jQuery Colorbox for Rails 3.1+ asset pipeline}
+  s.description = %q{jQuery Colorbox (http://www.jacklmoore.com/colorbox) for Rails 3.1+ asset pipeline }
 
   s.rubyforge_project = "jquery-colorbox-rails"
+  s.files = Dir["{app,vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
+  s.require_paths = ["lib"]
 
-  s.files = Dir["{vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  s.require_path  = "lib"
-
-  s.add_dependency             'railties',   '>= 3.1'
+  s.add_dependency 'railties',   '>= 3.1'
 end
