@@ -1,4 +1,0 @@
-[submodule "colorbox"]
-	path = colorbox
-	url = git@github.com:jackmoore/colorbox.git
-        ignore = dirty
