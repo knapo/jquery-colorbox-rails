@@ -1,4 +1,4 @@
-module JqueryColorbox
+module JqueryColorboxRails
 	class Engine < ::Rails::Engine
 	end
 end
