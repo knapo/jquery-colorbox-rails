@@ -27,3 +27,11 @@ For i18n integration (e.g. pl language) also add:
 ```javascript
 //= require jquery.colorbox-pl
 ```
+
+To use one of attached [css examples](http://www.jacklmoore.com/colorbox/example1/) add:
+
+```css
+*= require jquery.colorbox-example1
+```
+
+to your css manifest file. There are 5 examples availables (example1, example2...and so on).
