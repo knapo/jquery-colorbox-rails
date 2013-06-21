@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.license      = 'MIT'
   s.homepage    = "https://github.com/knapo/jquery-colorbox-rails"
   s.summary     = %q{jQuery Colorbox integration for Rails 3.1+ asset pipeline}
-  s.description = %q{jQuery Colorbox integration for Rails 3.1+ asset pipeline}
+  s.description = %q{jQuery Colorbox [https://github.com/jackmoore/colorbox] integration for Rails 3.1+ asset pipeline}
 
   s.rubyforge_project = "jquery-colorbox-rails"
   s.files = Dir["{vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
