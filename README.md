@@ -2,8 +2,6 @@
 
 jquery-colorbox-rails integrates [jquery.colorbox](https://github.com/jackmoore/colorbox) with rails 3.1+ asset pipeline.
 
-Current binded versions is 1.4.22.
- 
 ### Installation
 
 Add
