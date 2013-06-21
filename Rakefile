@@ -36,8 +36,8 @@ task :update do
 	  FileUtils.cp Dir[File.join(example, 'images/*')], target_img_dir
 
 	  css_content = File.read File.join(example, 'colorbox.css')
-		css_content.gsub!(/url\(\s*images\//, "url(#{target_img_rel_dir}/")
-	  File.open(File.join(css_dir, "jquery.colorbox-#{example_name}.css"), 'w') do |f|
+		css_content.gsub!(/url\(\s?images\/([^\)]+)\)/, 'image-url(\'\1\')')
+	  File.open(File.join(css_dir, "jquery.colorbox-#{example_name}.css.scss"), 'w') do |f|
 	  	f.write(css_content)
 	  end
     puts "...ok"
