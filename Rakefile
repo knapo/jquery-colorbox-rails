@@ -44,3 +44,14 @@ task :update do
     puts "...ok"
   end
 end
+
+task :build do
+	FileUtils.rm_f Dir['*.gem']
+	`gem build jquery-colorbox-rails.gemspec`
+	built_gem_file = Dir['*.gem'].first
+	if built_gem_file
+		`gem push #{built_gem_file}`
+	else
+		raise "Gem was not built!"
+	end
+end
