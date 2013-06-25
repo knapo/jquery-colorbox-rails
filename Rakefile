@@ -12,7 +12,7 @@ task :update do
 	end
 
 	puts 'Updating source files...'
-	`git submodule update`
+	`git submodule foreach git pull`
 
 	puts 'Copying source js files...'
 
