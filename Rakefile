@@ -43,6 +43,13 @@ task :update do
 	  end
     puts "...ok"
   end
+
+  puts 'Updating version...'
+  version = File.read('colorbox/jquery.colorbox.js').match(/Colorbox v(\d{1,2}\.\d{1,2}\.\d{1,2})/)[1]
+  readme = File.read('README.md')
+  puts "Current version is: #{version}"
+  new_content = readme.gsub(/(?<=<b id="colorbox-version">)[\d\.]+(?=<\/b>)/, version)
+  File.open('README.md','w') { |f| f.write(new_content) }
 end
 
 task :build do
