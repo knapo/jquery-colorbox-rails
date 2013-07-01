@@ -9,6 +9,7 @@ task :update do
 	[js_dir, css_dir, img_dir].each do |dir|
 		FileUtils.rm_r(dir)
 		FileUtils.mkdir(dir)
+		FileUtils.touch(File.join(dir, '.gitkeep'))
 	end
 
 	puts 'Updating source files...'
