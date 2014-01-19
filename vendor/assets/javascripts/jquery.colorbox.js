@@ -422,7 +422,7 @@
 	// Colorbox's markup needs to be added to the DOM prior to being called
 	// so that the browser will go ahead and load the CSS background images.
 	function appendHTML() {
-		if (!$box && document.body) {
+		if (document.body) {
 			init = false;
 			$window = $(window);
 			$box = $tag(div).attr({
@@ -539,9 +539,6 @@
 	if ($.colorbox) {
 		return;
 	}
-
-	// Append the HTML when the DOM loads
-	$(appendHTML);
 
 
 	// ****************
@@ -1077,6 +1074,10 @@
 	// returns a jQuery object.
 	publicMethod.element = function () {
 		return $(element);
+	};
+	
+	publicMethod.appendHTML = function() {
+     		appendHTML();
 	};
 
 	publicMethod.settings = defaults;
