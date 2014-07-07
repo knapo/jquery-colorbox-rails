@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.files = Dir["{vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'railties', '~> 3.1', '~> 4.0'
+  s.add_runtime_dependency 'railties', '>= 3.1', '<= 5.0'
 end
