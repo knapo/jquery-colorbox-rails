@@ -9,7 +9,7 @@ Colorbox version: <b id="colorbox-version">1.5.10</b>
 Add
 
 ``` ruby
-gem 'jquery-colorbox-rails'` 
+gem 'jquery-colorbox-rails'
 ```
 
 to your `Gemfile`
