@@ -37,7 +37,7 @@ task :update do
 
 	  css_content = File.read File.join(example, 'colorbox.css')
 		css_content.gsub!(/url\(\s?images\/([^\)]+)\)/) do |_|
-			"image-url('#{File.join('colorbox', example_name,	$1)}')"  
+			"image-url('#{File.join('colorbox', example_name,	$1)}')"
 		end
 	  File.open(File.join(css_dir, "jquery.colorbox-#{example_name}.css.scss"), 'w') do |f|
 	  	f.write(css_content)
@@ -46,7 +46,7 @@ task :update do
   end
 
   puts 'Updating version...'
-  version = File.read('colorbox/jquery.colorbox.js').match(/Colorbox v(\d{1,2}\.\d{1,2}\.\d{1,2})/)[1]
+  version = File.read('colorbox/jquery.colorbox.js').match(/Colorbox (\d{1,2}\.\d{1,2}\.\d{1,2})/)[1]
   readme = File.read('README.md')
   puts "Current version is: #{version}"
   new_content = readme.gsub(/(?<=<b id="colorbox-version">)[\d\.]+(?=<\/b>)/, version)
