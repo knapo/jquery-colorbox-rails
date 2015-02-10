@@ -3,6 +3,8 @@ require 'bundler/setup'
 require 'bundler/gem_tasks'
 
 task :update do
+  Dir['*.gem'].each{ |f| FileUtils.rm(f) }
+
 	js_dir  = 'vendor/assets/javascripts'
 	css_dir = 'vendor/assets/stylesheets'
 	img_dir = 'vendor/assets/images'
