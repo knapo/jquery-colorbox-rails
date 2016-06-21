@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Krzysztof Knapik"]
   s.email       = ["k@knapik.cc"]
   s.license     = 'MIT'
-  s.homepage    = "https://github.com/kknapik/jquery-colorbox-rails"
+  s.homepage    = "https://github.com/knapo/jquery-colorbox-rails"
   s.summary     = %q{jQuery Colorbox integration for Rails 3.1+ asset pipeline}
   s.description = %q{jQuery Colorbox [https://github.com/jackmoore/colorbox] integration for Rails 3.1+ asset pipeline}
 
