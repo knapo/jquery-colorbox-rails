@@ -41,7 +41,7 @@ task :update do
 		css_content.gsub!(/url\(\s?images\/([^\)]+)\)/) do |_|
 			"image-url('#{File.join('colorbox', example_name,	$1)}')"
 		end
-	  File.open(File.join(css_dir, "jquery.colorbox-#{example_name}.css.scss"), 'w') do |f|
+	  File.open(File.join(css_dir, "jquery.colorbox-#{example_name}.scss"), 'w') do |f|
 	  	f.write(css_content)
 	  end
     puts "...ok"
