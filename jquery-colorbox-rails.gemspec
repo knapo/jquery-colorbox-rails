@@ -1,19 +1,26 @@
-$:.push File.expand_path("../lib", __FILE__)
-require "jquery-colorbox-rails/version"
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'jquery-colorbox-rails/version'
 
-Gem::Specification.new do |s|
-  s.name        = "jquery-colorbox-rails"
-  s.version     = JqueryColorboxRails::VERSION
-  s.authors     = ["Krzysztof Knapik"]
-  s.email       = ["knapo@knapo.net"]
-  s.license     = 'MIT'
-  s.homepage    = "https://github.com/knapo/jquery-colorbox-rails"
-  s.summary     = %q{jQuery Colorbox integration for Rails 3.1+ asset pipeline}
-  s.description = %q{jQuery Colorbox [https://github.com/jackmoore/colorbox] integration for Rails 3.1+ asset pipeline}
+Gem::Specification.new do |spec|
+  spec.name        = 'jquery-colorbox-rails'
+  spec.version     = JqueryColorboxRails::VERSION
+  spec.authors     = ['Krzysztof Knapik']
+  spec.email       = ['knapo@knapo.net']
+  spec.license     = 'MIT'
+  spec.homepage    = 'https://github.com/knapo/jquery-colorbox-rails'
+  spec.summary     = 'jQuery Colorbox integration for Rails 3.1+ asset pipeline'
+  spec.description = 'jQuery Colorbox [https://github.com/jackmoore/colorbox] integration for Rails 3.1+ asset pipeline'
 
-  s.rubyforge_project = "jquery-colorbox-rails"
-  s.files = Dir["{vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
-  s.require_paths = ["lib"]
+  spec.metadata['homepage_uri'] = 'https://github.com/knapo/jquery-colorbox-rails'
+  spec.metadata['source_code_uri'] = 'https://github.com/knapo/jquery-colorbox-rails'
 
-  s.add_runtime_dependency 'railties', '>= 3.1'
+  spec.required_ruby_version = '>= 2.0.0'
+
+  spec.files = Dir['{vendor,lib}/**/*'] + ['LICENSE', 'Rakefile', 'Gemfile', 'README.md']
+  spec.require_paths = ['lib']
+
+  spec.add_runtime_dependency 'railties', '>= 3.1'
+
+  spec.add_development_dependency 'rake', '~> 10.0'
 end

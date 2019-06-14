@@ -1,4 +1,4 @@
-require "jquery-colorbox-rails/engine"
+require 'jquery-colorbox-rails/engine'
 
 module JqueryColorboxRails
 end
