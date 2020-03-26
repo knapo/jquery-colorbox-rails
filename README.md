@@ -1,6 +1,6 @@
 # jquery-colorbox-rails
 
-[![Gem Version](https://badge.fury.io/rb/jquery-colorbox-rails.png)][gem_version]
+[![Gem Version](https://badge.fury.io/rb/jquery-colorbox-rails.svg)][gem_version]
 
 [gem_version]: https://rubygems.org/gems/jquery-colorbox-rails
 
