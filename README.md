@@ -1,6 +1,7 @@
 # jquery-colorbox-rails
 
 [![Gem Version](https://badge.fury.io/rb/jquery-colorbox-rails.png)][gem_version]
+
 [gem_version]: https://rubygems.org/gems/jquery-colorbox-rails
 
 jquery-colorbox-rails integrates [jquery.colorbox](https://github.com/jackmoore/colorbox) with rails 3.1+ asset pipeline.
