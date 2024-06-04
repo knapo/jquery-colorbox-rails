@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.metadata['homepage_uri'] = 'https://github.com/knapo/jquery-colorbox-rails'
   spec.metadata['source_code_uri'] = 'https://github.com/knapo/jquery-colorbox-rails'
 
-  spec.required_ruby_version = '>= 2.0.0'
+  spec.required_ruby_version = '>= 3.0.0'
 
   spec.files = Dir['{vendor,lib}/**/*'] + ['LICENSE', 'Rakefile', 'Gemfile', 'README.md']
   spec.require_paths = ['lib']
